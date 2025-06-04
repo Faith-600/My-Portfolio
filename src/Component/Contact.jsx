@@ -8,9 +8,16 @@ function Contact() {
         <h2 className="contact-heading">Get in Touch</h2>
         <form
           className="contact-form"
-          action="https://formspree.io/f/{you}"
+          action="https://formspree.io/f/mdkzkaeg"
           method="POST"
         >
+
+            {/* <input
+    type="hidden"
+    name="_next"
+    value="http://localhost:5173//thankyou"
+  /> */}
+
           <input
             type="text"
             name="name"
