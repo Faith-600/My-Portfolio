@@ -12,11 +12,11 @@ function Contact() {
           method="POST"
         >
 
-            {/* <input
+            <input
     type="hidden"
     name="_next"
-    value="http://localhost:5173//thankyou"
-  /> */}
+    value="https://my-portfolio-sigma-gules-12.vercel.app/thankyou"
+  />
 
           <input
             type="text"
