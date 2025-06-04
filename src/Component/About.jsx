@@ -11,7 +11,7 @@ function About() {
              Along the way, I discovered web development as a powerful way to create  more solutions that truly make a  huge difference for users. 
              This unique blend gives me a user-centered approach to building websites and apps. I love crafting digital experiences that are responsive, 
              engaging, and accessible to everyone.</p>
-   <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="bounce">
+   <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="bounce">
   View Resume
 </a>
     </div>
