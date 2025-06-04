@@ -1,7 +1,41 @@
+import React, { useState } from 'react';
 import { FiMail } from 'react-icons/fi'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom';
 
 function Contact() {
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        navigate('/thankyou'); // Redirect to ThankYou page
+      } else {
+        console.error('Form submission failed:', response.statusText);
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('An error occurred. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div>
       <section className="contact-section">
@@ -10,6 +44,7 @@ function Contact() {
           className="contact-form"
           action="https://formspree.io/f/mdkzkaeg"
           method="POST"
+          onSubmit={handleSubmit}
         >
 
             <input
@@ -39,8 +74,12 @@ function Contact() {
             required
             className="contact-textarea"
           ></textarea>
-          <button type="submit" className="contact-button">
-            Send Message
+         <button
+            type="submit"
+            className="contact-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </form>
 
