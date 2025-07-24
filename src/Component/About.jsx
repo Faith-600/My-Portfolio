@@ -6,11 +6,9 @@ function About() {
     <div className='aboutdiv'>
     <div className='about' >
         <h1 className='about-h1'>About Me</h1>
-        <p>I’m a self-taught Full-Stack Developer with a background in public 
-            health. I originally moved into healthcare because I’m passionate about helping people and improving lives.
-             Along the way, I discovered web development as a powerful way to create  more solutions that truly make a  huge difference for users. 
-             This unique blend gives me a user-centered approach to building websites and apps. I love crafting digital experiences that are responsive, 
-             engaging, and accessible to everyone.</p>
+        <p>I’m a Full-Stack Developer who enjoys building user-friendly digital experiences that solve real problems. I focus on creating responsive, accessible, and engaging websites and applications that not only look good but work seamlessly across devices.
+     I bring a user-centered mindset to every project, blending functionality with intuitive design. Whether it’s a landing page, dashboard, or a full-stack product, I care deeply about performance, usability, and delivering real value.
+    I’m always learning, iterating, and improving — driven by curiosity and the joy of turning ideas into impactful products.</p>
    <a href="/CV.pdf" target="_blank" rel="noopener noreferrer" className="bounce">
   View Resume
 </a>

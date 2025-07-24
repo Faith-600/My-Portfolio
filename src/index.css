@@ -136,14 +136,14 @@ font-family: 'Times New Roman', Times, serif;
   align-items: center;
   justify-content: space-between;
   padding:0 2rem;
-  flex-wrap: npwrap; 
-  gap: 2rem;
+  flex-wrap: nowrap; 
+  gap: 1rem;
   text-align: center;
 
 }
 
 .about p{
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .picturetwodiv {
@@ -183,12 +183,13 @@ font-family: 'Times New Roman', Times, serif;
 }
 .about h1 {
   font-size: 2rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .about p {
   font-size: 1rem;
-  line-height: 1.8;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 
@@ -477,8 +478,9 @@ font-family: 'Times New Roman', Times, serif;
 
   .typewriter .bounce {
     padding: 10px 20px;
-  }
+   }
 
+  
   
 .herodiv{
   gap:20px;
