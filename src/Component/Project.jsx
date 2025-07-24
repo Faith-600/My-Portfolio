@@ -5,7 +5,7 @@ function Project() {
   return (
      <section className="project-section">
       <h2 className="project-heading">Projects</h2>
-    <p className='project-p'>A section of my recent work,showcasing my skills and experience in full-statement development.</p>
+    <p className='project-p'>A section of my recent work,showcasing my skills and experience in full-stack development.</p>
     <div className="project-grid">
         {files.map((project, index) => (
           <div className="project-card" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>            
